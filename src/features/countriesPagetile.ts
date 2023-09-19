@@ -9,7 +9,7 @@ const initialState: PosterType = {
 
 //save current poster data to store
 export const loadCountryPoster = createAsyncThunk(
-    'countryPage/loadCountryPage',
+    'countryPoster/loadCountryPoster',
     async (countryPosterData: CountryType) => {
         // const response = await api.getCountry(name);
         // return response;
