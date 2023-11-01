@@ -1,5 +1,5 @@
 export interface countriesStateType {
-    countries: Array<any>,
+    countries: Array<CountryType>,
     status: 'idle' | 'failed' | 'loading' | 'success',
     error: string,
 }
