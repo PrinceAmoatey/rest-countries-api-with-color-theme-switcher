@@ -25,7 +25,7 @@ export const loadCountryPoster = createAsyncThunk(
 //     }
 // );
 
-export const countryPosterSlice = createSlice({
+export const countriesPageTile = createSlice({
     name: 'countryPoster',
     initialState,
     reducers: {
@@ -54,4 +54,4 @@ export const selectStatus = (state: any) => state.countryPoster.status;
 export const selectErrorMessage = (state: any) => state.countryPoster.error;
 
 
-export default countryPosterSlice.reducer;
+export default countriesPageTile.reducer;
