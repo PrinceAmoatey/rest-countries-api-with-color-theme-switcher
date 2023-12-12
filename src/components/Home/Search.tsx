@@ -1,4 +1,5 @@
 import React, { ChangeEvent, ChangeEventHandler, EventHandler } from "react";
+import Filter from "./Filter";
 
 
 
@@ -28,6 +29,9 @@ function Search({ handleSearchTerm, searchTerm, handleFilterByRegion }: PropType
                     <input className="text__field" type="text" placeholder="Search for a country..."
                         value={searchTerm} onChange={(event) => handleSearchQuery(event)}></input>
                 </div>
+
+                <Filter handleFilterByRegion={handleFilterByRegion}
+                />
 
                
             </div>
